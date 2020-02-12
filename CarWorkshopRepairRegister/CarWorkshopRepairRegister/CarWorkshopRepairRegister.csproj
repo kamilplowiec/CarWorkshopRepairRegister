@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D258C305-6E99-466E-9DA0-74305211B767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarWorkshopRepairRegister</RootNamespace>
+    <AssemblyName>CarWorkshopRepairRegister</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baza.cs" />
+    <Compile Include="EdycjaPojazdu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaPojazdu.Designer.cs">
+      <DependentUpon>EdycjaPojazdu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaOsoby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaOsoby.Designer.cs">
+      <DependentUpon>EdycjaOsoby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaNaprawy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaNaprawy.Designer.cs">
+      <DependentUpon>EdycjaNaprawy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaUslugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaUslugi.Designer.cs">
+      <DependentUpon>EdycjaUslugi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaPracownika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaPracownika.Designer.cs">
+      <DependentUpon>EdycjaPracownika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNapraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNapraw.Designer.cs">
+      <DependentUpon>ListaNapraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPojazdow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPojazdow.Designer.cs">
+      <DependentUpon>ListaPojazdow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOsob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaOsob.Designer.cs">
+      <DependentUpon>ListaOsob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaUslug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaUslug.Designer.cs">
+      <DependentUpon>ListaUslug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPracownikow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPracownikow.Designer.cs">
+      <DependentUpon>ListaPracownikow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logowanie.Designer.cs">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Osoba.cs" />
+    <Compile Include="Pojazd.cs" />
+    <Compile Include="Pracownik.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RejestrNapraw.cs" />
+    <Compile Include="RejestrNaprawUslugi.cs" />
+    <Compile Include="Usluga.cs" />
+    <EmbeddedResource Include="EdycjaPojazdu.resx">
+      <DependentUpon>EdycjaPojazdu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaOsoby.resx">
+      <DependentUpon>EdycjaOsoby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaNaprawy.resx">
+      <DependentUpon>EdycjaNaprawy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaUslugi.resx">
+      <DependentUpon>EdycjaUslugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaPracownika.resx">
+      <DependentUpon>EdycjaPracownika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNapraw.resx">
+      <DependentUpon>ListaNapraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPojazdow.resx">
+      <DependentUpon>ListaPojazdow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaOsob.resx">
+      <DependentUpon>ListaOsob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaUslug.resx">
+      <DependentUpon>ListaUslug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPracownikow.resx">
+      <DependentUpon>ListaPracownikow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logowanie.resx">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
