@@ -1,5 +1,6 @@
-# CarWorkshopRepairRegister (CWRR)
 ## Warsztat samochodowy - rejestr napraw
+
+![Warsztat samochodowy - rejestr napraw](https://kamilplowiec.tk/img/portfolio/csdesktop5.jpg)
 
 Dane logowania: 
 login: a
