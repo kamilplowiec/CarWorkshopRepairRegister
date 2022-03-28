@@ -3,22 +3,22 @@
 ![Warsztat samochodowy - rejestr napraw](https://kamilplowiec.tk/img/portfolio/csdesktop5.jpg)
 
 Dane logowania: 
-login: a
-has≥o: a
+- login: a
+- has≈Ço: a
 
 ## Opis programu
 
-1. Lista osÛb (pracownicy, klienci) dodawanie, edycja, usuwanie
-2. Cennik us≥ug warsztatu dodawanie edycja usuwanie
-3. Lista pojazdÛw dodawanie, edycja, usuwanie
+1. Lista os√≥b (pracownicy, klienci) dodawanie, edycja, usuwanie
+2. Cennik us≈Çug warsztatu dodawanie edycja usuwanie
+3. Lista pojazd√≥w dodawanie, edycja, usuwanie
 4. Rejestr napraw:
-	-data przyjecia
-	-data zwrotu
-	-czy naprawa sie powiodla
-	-lista wykonanych uslug
-	-pojazd
-	-kto przyjal
-	-kto oddal
+	- data przyjecia
+	- data zwrotu
+	- czy naprawa sie powiodla
+	- lista wykonanych uslug
+	- pojazd
+	- kto przyjal
+	- kto oddal
 
 ## Tabele
 
@@ -86,4 +86,4 @@ has≥o: a
   - Lista pracownikow w systemie
   - Dodawanie/edycja pracownika
   - Usuwanie pracownika (usuwa wszystkie naprawy wykonane przez niego)
-- Zaplanowane naprawy na dziú
+- Zaplanowane naprawy na dzi≈õ
